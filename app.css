@@ -7,6 +7,18 @@
 
 }
 
+header {
+    background-color: #0dd7a5;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 28px
+}
+
 section.front,
 section.back {
 display: flex !important;
@@ -31,6 +43,15 @@ h4.front {
     display: block;
 }
 
+@media only screen and (max-width: 40em) {
+  h2 {
+      font-size: 46px;
+  }
+  h4 {
+      font-size: 20px;
+  }
+ }
+
 #nav_sections a.active{
   background-color: #0dd7a5!important;
 }
@@ -52,12 +73,12 @@ body {
 
 }
 html {
-  padding: 50px;
-  display: table;
+  /*padding: 50px;
+  display: table;*/
 }
 body {
-  display: table-cell;
-  vertical-align: middle;
+  /*display: table-cell;
+  vertical-align: middle;*/
 }
 #nav_sections{
   width:300px;
@@ -72,10 +93,10 @@ body {
   border-radius: 6px;
   font-size:12px;
   color:#fff;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif !important;
 }
 #container{
-  margin: 0px auto 120px auto;
+  margin: 10px auto;
   box-shadow: 0px 0px 25px rgba(0,0,0,.04);
   width: 100%;
   max-width: 550px;
@@ -144,7 +165,7 @@ article#flashcard div.nav a {
   cursor: pointer;
   color: #FFF;
   background: #02a1e4;
-  padding: 15px 113px;
+  padding: 15px 40px;
   border-radius: 8px;
   margin-right:10px;
 }

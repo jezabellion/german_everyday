@@ -85,7 +85,7 @@ tpl += '<section class="front"><div class="card-contents"><h2>{{word}}</h2>';
 tpl += '<h4 class="front">{{pronounciation}}</h4></div></section>';
 tpl += '<section class="back"><div class="card-contents"><h2>{{description}}</section></h2></div>';
 tpl += '</label>';
-tpl += '<div class="nav"><a id="previous" onclick="prev()">&#x2039; prev</a><a id="next" onclick="next()">next &#x203A;</a></div>'
+tpl += '<div class="nav"><div class="row"><div class="small-6 columns"><a id="previous" onclick="prev()">&#x2039; prev</a></div><div class="small-6 columns"><a id="next" onclick="next()">next &#x203A;</a></div></div></div>'
 tpl += '</article>';
 
 var render = function(options) {
