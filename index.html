@@ -22,27 +22,43 @@
 <body>
     <!-- Rectangular switch -->
 
-    <div id="nav_sections"></div>
-    <div id="container">
-        <article id="flashcard">
-        <word-item
-          v-for="word in words" v-if="word.show"
-          v-bind:word="word"
-          v-bind:key="word.word">
-        </word-item>
-        <div class="nav">
-        <a id="previous" v-on:click="prev()">&#x2039; prev</a>
-        <a id="next" v-on:click="next">next &#x203A;</a>
-      </div>
-    </article>
 
+    <div class="row">
+        <div class="small-12 medium-8 medium-centered columns">
+            <div id="nav_sections"></div>
+            <div id="container">
+                <article id="flashcard">
+                    <word-item
+                        v-for="word in words" v-if="word.show"
+                        v-bind:word="word"
+                        v-bind:key="word.word">
+                    </word-item>
+                    
+                    <div class="nav"><div class="row"><div class="small-6 columns"><a id="previous" v-on:click="prev">&#x2039; prev</a></div><div class="small-6 columns"><a id="next" v-on:click="next">next &#x203A;</a></div></div></div>
+                </article>
+            
+            </div>
+        </div>
     </div>
-    <div id='display'><span class='total'></span></div>
+    
+    <div class="row">
+        <div class="small-12 medium-8 medium-centered columns">
+            <div class="row">
+                <div class="small-6 columns">
+                    <div id='display'><span class='total'></span></div>
+                </div>
+                <div class="small-6 columns">
+                    
+                    <!-- Rectangular switch -->
+                    <label class="checkbox_check">
+                        Random <input type="checkbox">
+                            <span class="slider"></span>
+                            </label>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <label class="checkbox_check">
-      Random <input type="checkbox" name="random">
-      <span class="slider"></span>
-    </label>
 
     <script
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
